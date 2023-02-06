@@ -12,6 +12,8 @@ public class Car {
 	private boolean available;
 	private LocalDate firstReleasedate;
 	private List<String> additionalFetures;
+	private Engine engine;
+	private List<Tire> tire;
 
 	public Car() {
 
@@ -79,6 +81,22 @@ public class Car {
 
 	public void setAdditionalFetures(List<String> additionalFetures) {
 		this.additionalFetures = additionalFetures;
+	}
+
+	public Engine getEngine() {
+		return engine;
+	}
+
+	public void setEngine(Engine engine) {
+		this.engine = engine;
+	}
+
+	public List<Tire> getTire() {
+		return tire;
+	}
+
+	public void setTire(List<Tire> tire) {
+		this.tire = tire;
 	}
 
 	@Override
